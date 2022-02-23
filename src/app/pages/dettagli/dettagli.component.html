@@ -1,0 +1,12 @@
+<div class="container mt-3" *ngIf="post" [ngClass]="{
+  'bg-warning': post.type == 'news',
+  'bg-info': post.type == 'education',
+  'bg-dark': post.type == 'politic',
+  'text-white': post.type == 'politic'
+}">
+  <h2 class="text-center">{{post.title}}</h2>
+  <hr>
+  <p>{{post.body}}</p>
+  <p>Categoria: {{post.type}}</p>
+  <p>Autore: {{post.autore}}</p>
+</div>

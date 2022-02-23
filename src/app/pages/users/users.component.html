@@ -1,0 +1,9 @@
+<div class="container-fluid mt-3" *ngFor="let utente of users; let i = index">
+  <div class="container border">
+    <p [routerLink]="['/users', utente.id]" routerLinkActive="active">{{utente.name}}</p>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+
+

@@ -1,0 +1,8 @@
+<div class="container mt-3 text-white w-25" *ngIf="utente" [ngClass]="{
+  'bg-info': utente.role == 'admin',
+  'bg-danger': utente.role == 'user'
+}">
+  <h3 class="fw-bold">{{utente.name}}</h3>
+  <p>Email: {{utente.email}}</p>
+  <p>Ruolo: {{utente.role}}</p>
+</div>
